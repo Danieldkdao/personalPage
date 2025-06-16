@@ -5,13 +5,10 @@ body{
     margin: 0;
     padding: 0;
 }
-a{
+.a{
     text-decoration: none;
-    color: rgb(105, 79, 79);
+    color: blue;
     font-weight: bold;
-}
-a:hover{
-    text-decoration: underline;
 }
 nav{
     background-color:azure;
@@ -41,8 +38,15 @@ nav{
     border-radius: 10px;
     overflow: auto;
     padding: 5px;
-    height: 40vh;
+    height: 15vh;
+    cursor: pointer;
     transition: transform 0.2s;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .content2:hover{
     transform: scale(0.95);
@@ -111,4 +115,43 @@ nav{
 .unselect{
     background-color: rgb(218, 218, 218);
     color: black;
+}
+.back{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+.imgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food{
+    border: none;
+    background-color: transparent;
+}
+.foodImg{
+    width: 100px;
+    height: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border 0.1s;
+}
+.foodImg:hover{
+    border: 2px solid;
+}
+.popup{
+    position: relative;
+    border-radius: 20px;
+    max-width: 600px;
+}
+.x{
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    border: none;
+    background-color: transparent;
+    outline: none;
 }
